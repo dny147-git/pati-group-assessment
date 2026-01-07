@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-nunito: "Nunito";
+  --font-lora: "Lora";
+}
+
+@layer utilities {
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+  .font-nunito {
+    font-family: var(--font-nunito);
+  }
+  .font-lora {
+    font-family: var(--font-lora);
+  }
+}
