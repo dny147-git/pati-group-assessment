@@ -6,8 +6,8 @@
   --font-montserrat: "Montserrat", sans-serif;
   --font-nunito: "Nunito";
   --font-lora: "Lora";
+  --font-triong: "Trirong", serif;
 }
-
 @layer utilities {
   .font-montserrat {
     font-family: var(--font-montserrat);
@@ -17,5 +17,8 @@
   }
   .font-lora {
     font-family: var(--font-lora);
+  }
+  .font-triong {
+    font-family: var(--font-triong);
   }
 }

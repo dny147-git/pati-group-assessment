@@ -3,7 +3,7 @@ import verifedImg from "../../assets/images/verifed.avif"
 import RatingImg from "../../assets/images/rating.png"
 export default function TopReview() {
   return (
-    <div className="w-full bg-[#f3eee0] p-3 mt-6 rounded-lg">
+    <div className="w-full bg-[#f3eee0] p-3 my-6 rounded-lg">
       {/* heading */}
       <div className="flex items-center gap-4">
         {" "}

@@ -11,6 +11,7 @@ import nynm from "../../assets/images/nynm.avif"
 import daysImg from "../../assets/images/60-days.webp"
 import usaImg from "../../assets/images/usa.webp"
 import TopReview from "../review/TopReview"
+import SolutionItem from "./SolutionItem"
 const PRICING_OPTIONS = [
   {
     id: "p1",
@@ -56,6 +57,73 @@ const PRICING_OPTIONS = [
     ],
   },
 ]
+const SOLUTION_ITEMS = [
+  {
+    id: 1,
+    title: "Ingredients proven by science",
+    type: "list",
+    content: {
+      heading: "Sculptique Ingredients:",
+      list: [
+        {
+          name: "Echinacea purpurea Extract",
+          desc: "Known for its anti-inflammatory properties, it may support skin health.",
+        },
+        {
+          name: "Dandelion Extract",
+          desc: "Traditionally used as a diuretic, it may help reduce water retention.",
+        },
+        {
+          name: "Burdock Powder",
+          desc: "Contains antioxidants that may promote skin clarity.",
+        },
+        {
+          name: "Cleavers Extract",
+          desc: "Believed to support lymphatic drainage and detoxification.",
+        },
+        {
+          name: "Rutin",
+          desc: "A flavonoid that may strengthen blood vessels and improve circulation.",
+        },
+        {
+          name: "Bromelain Powder",
+          desc: "An enzyme from pineapple that may reduce inflammation and support tissue repair.",
+        },
+        {
+          name: "Lemon Powder",
+          desc: "Rich in vitamin C, it may aid in collagen production and skin rejuvenation.",
+        },
+        {
+          name: "Kelp Extract",
+          desc: "A source of iodine and minerals that may support skin metabolism.",
+        },
+      ],
+    },
+  },
+
+  {
+    id: 2,
+    title: "How does it actually work?",
+    type: "text",
+    content: {
+      text: `Sculptique works by improving blood flow and supporting lymphatic drainage 
+      to reduce fluid buildup that causes puffiness, inflammation, and water retention. 
+      It also reduces inflammation and boosts collagen production to help skin become 
+      firmer and smoother.`,
+    },
+  },
+  {
+    id: 3,
+    title: "Shipping and returns",
+    type: "text",
+    content: {
+      text: `All of Sculptique orders get FREE shipping straight from our USA warehouse. Orders are usually shipped out within 1-2 working days, and you should receive the order within 3-7 working days for domestic USA orders, and within 10 working days for International orders.
+      <br/>
+      We also offer a 60-day money back guarantee - if you are unsatisfied with our product, you can take advantage of our guarantee and ship back the product to us to get your return within 60 days of receiving your order.`,
+    },
+  },
+]
+
 export default function ProductPanelRight() {
   return (
     <div className="w-147">
@@ -222,6 +290,11 @@ export default function ProductPanelRight() {
         </div>
       </div>
       <TopReview />
+      <div className="space-y-4">
+        {SOLUTION_ITEMS.map((item) => (
+          <SolutionItem key={item.id} {...item} />
+        ))}
+      </div>
     </div>
   )
 }
