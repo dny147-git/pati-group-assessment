@@ -60,7 +60,7 @@ const PRICING_OPTIONS = [
 const SOLUTION_ITEMS = [
   {
     id: 1,
-    title: "Ingredients proven by science",
+    title: "How is this different from lymphatic drops I saw on TikTok?",
     type: "list",
     content: {
       heading: "Sculptique Ingredients:",

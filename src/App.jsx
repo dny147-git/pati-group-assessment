@@ -11,6 +11,9 @@ import RootCauseSection from "./components/root-cause/RootCauseSection"
 import WhyNothingWorked from "./components/root-cause/WhyNothingWorked"
 import SliderImg from "./components/ui/SliderImg"
 import StoriesSection from "./components/stories/StoriesSection"
+import FrequentlyQuestions from "./components/frequently-questions/FrequentlyQuestions"
+import MissionSection from "./components/mission/MissionSection"
+import ValuePropositionSection from "./components/value-proposition/ValuePropositionSection"
 function App() {
   return (
     <div>
@@ -26,6 +29,9 @@ function App() {
       <ProductBenefits />
       <ExpertAdviceSection />
       <StoriesSection />
+      <FrequentlyQuestions />
+      <MissionSection />
+      <ValuePropositionSection />
     </div>
   )
 }
