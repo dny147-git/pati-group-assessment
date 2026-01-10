@@ -74,27 +74,42 @@ const INGREDIENT_ITEMS = [
 [Study: Triple-masked trial in 90 participants]`,
   },
 ]
+
 export default function IngredientSystem() {
   return (
-    <div className="w-full bg-[#f7f2e7] flex flex-col justify-center items-center py-14 my-8">
-      <h2 className="font-lora text-[32px] mb-4 w-200  text-center">
-        <span className="text-[#039869]">The 8-Ingredient System</span> That
-        Restores What Hormones Once Maintained
-      </h2>
-      <div className="w-200 font-nunito flex flex-col gap-2 items-center text-[18px]">
-        <p className="text-center">
-          Sculptique is the only formula that addresses ALL 6 mechanisms of
-          lymphatic dysfunction simultaneously—not with symbolic doses, but with
-          therapeutic amounts based on clinical research.
-        </p>
-        <p>
-          Not just moving fluid temporarily. Not just reducing inflammation.
-          <strong> Complete restoration.</strong>
-        </p>
-      </div>
-      <div className="w-315 flex flex-wrap my-8">
-        {INGREDIENT_ITEMS.map((item) => {
-          return (
+    <section className="w-full bg-[#f7f2e7] py-14 my-8 px-4">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
+        {/* TITLE */}
+        <h2 className="font-lora text-[24px] md:text-[28px] lg:text-[32px] mb-4 text-center max-w-4xl">
+          <span className="text-[#039869]">The 8-Ingredient System</span> That
+          Restores What Hormones Once Maintained
+        </h2>
+
+        {/* DESCRIPTION */}
+        <div className="font-nunito flex flex-col gap-2 items-center text-[16px] lg:text-[18px] max-w-4xl text-center">
+          <p>
+            Sculptique is the only formula that addresses ALL 6 mechanisms of
+            lymphatic dysfunction simultaneously—not with symbolic doses, but
+            with therapeutic amounts based on clinical research.
+          </p>
+          <p>
+            Not just moving fluid temporarily. Not just reducing inflammation.
+            <strong> Complete restoration.</strong>
+          </p>
+        </div>
+
+        {/* INGREDIENT GRID */}
+        <div
+          className="
+            mt-10
+            grid grid-cols-2
+            sm:grid-cols-2
+            md:grid-cols-3
+            lg:grid-cols-4
+            w-full
+          "
+        >
+          {INGREDIENT_ITEMS.map((item) => (
             <IngredientCard
               key={item.id}
               title={item.title}
@@ -102,10 +117,16 @@ export default function IngredientSystem() {
               description={item.description}
               img={item.image}
             />
-          )
-        })}
+          ))}
+        </div>
+
+        {/* EFFECT IMAGE */}
+        <img
+          src={effectImg}
+          alt=""
+          className="mt-12 w-full max-w-[580px] object-cover"
+        />
       </div>
-      <img src={effectImg} className="w-145 object-cover" alt="" />
-    </div>
+    </section>
   )
 }

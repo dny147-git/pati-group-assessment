@@ -6,6 +6,7 @@ import stiffnessImg from "../../assets/images/stiffness.png"
 import thighImg from "../../assets/images/thigh.webp"
 import BenefitsSection from "./BenefitsSection"
 import Rating from "./Rating"
+
 const BENEFITS = [
   {
     id: "b1",
@@ -40,13 +41,27 @@ const BENEFITS = [
     title: "Boosts energy, mental clarity and emotional balance",
   },
 ]
+
 export default function ProductIntro() {
   return (
-    <div className="w-147">
+    <div className="w-full max-w-xl mx-auto lg:max-w-[580px]">
+      {/* Rating */}
       <Rating />
-      <h1 className="text-3xl font-lora my-4 leading-[1.4] font-[400px]">
-        New Maximum Potency Formula - Lymphatic Drainage Capsules by Sculptique™
+
+      {/* Title */}
+      <h1
+        className="
+          font-lora
+          text-[22px] sm:text-[26px] md:text-[30px] lg:text-[32px]
+          leading-snug
+          font-normal
+          my-4
+        "
+      >
+        New Maximum Potency Formula – Lymphatic Drainage Capsules by Sculptique™
       </h1>
+
+      {/* Benefits */}
       <BenefitsSection benefits={BENEFITS} />
     </div>
   )

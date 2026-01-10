@@ -1,10 +1,19 @@
 import { useState } from "react"
 import downArrowIcon from "../../assets/images/down-arrow.png"
+
 export default function IngredientCard({ title, name, img, description }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="w-77.5 p-4 border border-black bg-white">
+    <div
+      className="
+        col-span-2 sm:col-span-1
+        w-full
+        p-4
+        border border-black
+        bg-white
+      "
+    >
       {/* title */}
       <p className="text-[#0c7c00] font-nunito mb-2 text-center">✔ {title}</p>
 
@@ -20,7 +29,7 @@ export default function IngredientCard({ title, name, img, description }) {
 
         <img
           src={downArrowIcon}
-          className={`w-6 h-3 object-cover transition-transform duration-600 ${
+          className={`w-6 h-3 transition-transform duration-300 ${
             isOpen ? "rotate-180" : ""
           }`}
           alt="toggle"

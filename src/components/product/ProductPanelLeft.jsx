@@ -8,7 +8,7 @@ import tirednessImg from "../../assets/images/tiredness-min.png"
 import ImageCard from "../ui/ImageCard"
 export default function ProductPanelLeft() {
   return (
-    <div className="w-147">
+    <div className="hidden md:block md:w-full lg:w-147">
       {/* flex container */}
       <div className="flex gap-4">
         <ImageCard src={LymphDrainageImg} alt={"LymphDrainageImg"} />

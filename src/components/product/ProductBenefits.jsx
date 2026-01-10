@@ -19,24 +19,35 @@ const ITEMS = [
     image: supportImg,
   },
   {
-    id: "pb1",
+    id: "pb3",
     title: "100% Natural Ingredients",
     description: "8 active, natural ingredients",
     image: naturalImg,
   },
   {
-    id: "pb1",
+    id: "pb4",
     title: "Try it Risk Free for 60 Days",
     description: "60-day money-back guarantee",
     image: daysImg,
   },
 ]
+
 export default function ProductBenefits() {
   return (
-    <div className="w-full bg-[#f3eee0] py-8 f flex justify-center gap-6 my-14">
-      {ITEMS.map((item) => {
-        return <ProductBenefitItem key={item.id} item={item} />
-      })}
-    </div>
+    <section className="w-full bg-[#f3eee0] py-10 my-14">
+      <div
+        className="
+          max-w-7xl mx-auto px-4
+          grid grid-cols-2
+          md:grid-cols-2
+          lg:grid-cols-4
+          gap-6
+        "
+      >
+        {ITEMS.map((item) => (
+          <ProductBenefitItem key={item.id} item={item} />
+        ))}
+      </div>
+    </section>
   )
 }

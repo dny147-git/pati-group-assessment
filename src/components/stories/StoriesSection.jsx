@@ -8,7 +8,7 @@ export default function StoriesSection() {
           {" "}
           <img src={trustPilot} alt="trustPilot" className="w-75 h-11" />
         </div>
-        <h2 className="text-[32px] font-lora mb-10">
+        <h2 className="text-[24px] px-2 text-center md:text-[32px] font-lora mb-10">
           See The Stories of Sculptique™ Women Firsthand
         </h2>
         <StoriesSlider />

@@ -126,7 +126,7 @@ const SOLUTION_ITEMS = [
 
 export default function ProductPanelRight() {
   return (
-    <div className="w-147">
+    <div className="w-full flex-1">
       {/* heading */}
       <div className="flex items-center gap-2.5 relative">
         <div className="flex items-center gap-2">
@@ -250,7 +250,7 @@ export default function ProductPanelRight() {
         Add to cart
       </button>
       <div className="my-4 flex items-center justify-center gap-4">
-        <div className="flex items-center gap-2">
+        <div className="w-full justify-center flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="17"
@@ -265,15 +265,23 @@ export default function ProductPanelRight() {
               fill="black"
             ></path>
           </svg>
-          <p>Refills Ship Every 12 Week</p>
+          <p className="text-[12px] md:text-[16px]">
+            Refills Ship Every 12 Week
+          </p>
         </div>
         <p className="text-2xl font-normal opacity-0.6">|</p>
-        <div className="flex items-center gap-2">
+        <div className="flex w-full items-center gap-2">
           <img src={clockImg} alt="clock" className="w-5 h-5 object-cover" />
-          <p>Refills Ship Every 12 Week</p>
+          <p className="text-[12px] md:text-[16px]">
+            Refills Ship Every 12 Week
+          </p>
         </div>
       </div>
-      <img src={cardsImg} className="w-full h-8 object-cover" alt="cards" />
+      <img
+        src={cardsImg}
+        className="w-full h-8 object-cover my-4"
+        alt="cards"
+      />
       <img src={nynm} alt="banner" className="w-full h-45" />
       <div className="my-3 flex flex-col gap-4">
         <div className="flex items-center gap-2">

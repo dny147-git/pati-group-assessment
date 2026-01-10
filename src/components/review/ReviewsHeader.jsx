@@ -6,7 +6,7 @@ export default function ReviewsHeader() {
         <span className="text-green-600 font-semibold">★ Trustpilot</span>
       </p>
 
-      <h2 className="text-[34px] font-[400px] font-nunito  w-200 ">
+      <h2 className="text-[24px] md:text-[34px] font-[400px] font-lora w-full md:w-200 ">
         Real Women, Real Results: 93,000+ Transformations
       </h2>
 

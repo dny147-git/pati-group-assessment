@@ -3,11 +3,11 @@ import daysImg from "../../assets/images/60-days.webp"
 import img from "../../assets/images/greendeskt-min.webp"
 export default function ExpertAdviceSection() {
   return (
-    <div className="flex justify-center items-center my-4">
+    <div className="flex flex-col md:flex-row justify-center  my-4">
       {/* left */}
-      <div className="w-155 p-8 bg-[#f7f7f7] rounded-lg">
+      <div className="w-full md:w-155 p-8 bg-[#f7f7f7] rounded-lg ">
         <p className="font-nunito text-[#737373]">July 4th, 2025</p>
-        <h2 className="text-[32px] font-lora my-4 font-[400px]">
+        <h2 className="text-[24px] md:text-[32px] font-lora my-4 font-[400px]">
           Expert Advice from Dr. Emily Chen of a Premier New York Skin Clinic
         </h2>
         <p className="text-[18px] font-nunito">
@@ -23,13 +23,13 @@ export default function ExpertAdviceSection() {
           reduce inflammation, which restores your tissue and breaks down the
           fat cells in your skin.”
         </p>
-        <div className="flex flex-col gap-2 mt-4 w-112.5">
+        <div className="flex flex-col gap-2 mt-4 w-full  md:w-112.5">
           <button
             className="flex justify-center font-nunito py-5 px-20 cursor-pointer font-bold
                  text-white bg-black rounded-sm transition-all duration-200 hover:opacity-70 "
           >
             <a
-              className="text-[18px]"
+              className="text-[16px] md:text-[18px]"
               href="https://pay.trysculptique.com/lymphatic/checkout"
               target="_blank"
             >
@@ -48,10 +48,10 @@ export default function ExpertAdviceSection() {
         </div>
       </div>
       {/* right */}
-      <div className="">
+      <div className="p-4">
         <img
           src={img}
-          className="w-155 h-155 rounded-lg object-cover"
+          className="w-155 h-93.25 md:h-155 rounded-lg object-cover"
           alt="img"
         />
       </div>
